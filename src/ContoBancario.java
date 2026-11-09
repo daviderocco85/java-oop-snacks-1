@@ -11,11 +11,23 @@ public class ContoBancario {
         this.balance = BigDecimal.ZERO;
     }
 
+    public String getAccountNumber() {
+        return this.accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public BigDecimal getBalance() {
+        return this.balance;
+    }
+
     public void deposit(BigDecimal amount) {
         if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
             System.out.println("Somma depositata non valida, deve essere maggiore di zero");
         } else {
-            this.balance = balance.add(amount);
+            this.balance = this.balance.add(amount);
         }
     }
 
@@ -25,11 +37,8 @@ public class ContoBancario {
         } else if (amount.compareTo(this.balance) > 0) {
             System.out.println("Fondi insufficienti per il prelievo");
         } else {
-            this.balance = balance.subtract(amount);
+            this.balance = this.balance.subtract(amount);
         }
     }
 
-    public BigDecimal getCurrentBalance() {
-        return this.balance;
-    }
 }
