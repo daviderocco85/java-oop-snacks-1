@@ -28,7 +28,7 @@ Sono inoltre presenti i seguenti metodi pubblici:
 
 - `deposit()`: permette di depositare denaro sul conto.
 - `withdraw()`: permette di prelevare denaro dal conto.
-- `getCurrentBalance()`: restituisce il saldo corrente del conto.
+- `getBalance()`: restituisce il saldo corrente del conto.
 
 ## Snack 3: Registro Studenti
 
@@ -38,5 +38,5 @@ La classe utilizza un costruttore senza parametri per inizializzare un registro 
 
 Sono inoltre presenti i seguenti metodi:
 
-- `addStudent()`: permette di aggiungere uno studente al registro, verificando che ci sia ancora spazio disponibile.
-- `printStudents()`: stampa la lista degli studenti registrati, utilizzando direttamente un ciclo per scorrere l'array, senza ricorrere a metodi helper.
+- `addStudent()`: permette di aggiungere uno studente al registro.
+- `printStudents()`: stampa la lista degli studenti aggiunti, utilizzando direttamente un ciclo per scorrere l'array, senza ricorrere a metodi helper.
