@@ -23,6 +23,10 @@ public class ContoBancario {
         return this.balance;
     }
 
+    private void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
+
     public void deposit(BigDecimal amount) {
         if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
             System.out.println("Somma depositata non valida, deve essere maggiore di zero");
